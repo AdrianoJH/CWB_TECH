@@ -97,6 +97,18 @@ h1 {
     letter-spacing: -3px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    h1 {
+        margin-left: 30px;
+        text-align: start;
+    }
+
+    .cta {
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+}
+
 mark {
     background: #ff0;
     color: #000;
@@ -239,14 +251,35 @@ div.carousel .slider-next {
 }
 
 @media screen and (max-width: 500px) {
+    div.carousel {
+        display: flex;
+        justify-content: center;
+        width: 375px;
+        margin-left: -35px;
+    }
+
     div.carousel .carousel-items {
         min-height: 50vh;
+        margin-right: 100px;
+        width: 375px;
     }
 
     div.carousel .carousel-items .item {
         flex: 0 0 100%;
         max-width: 100%;
+        margin-left: 40px;
     }
+
+    div.carousel .slider-prev {
+        position: absolute;
+        margin-right: 365px;
+    }
+
+    div.carousel .slider-next {
+        position: absolute;
+        margin-right: 27px;
+    }
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 768px) {
